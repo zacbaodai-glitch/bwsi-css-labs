@@ -1,8 +1,6 @@
 name: simple_calculator unit test
   
-on:
-  push:
-  workflow_dispatch: 
+on: [push]  
   
 jobs:  
   build:  
@@ -32,5 +30,3 @@ jobs:
       - name: Generate Coverage Report  
         run: |  
           coverage report -m
-          on:
-
